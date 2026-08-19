@@ -1,6 +1,6 @@
 # Normarchy
 
-![Normarchy preview](preview.png)
+![Normarchy preview](https://raw.githubusercontent.com/ctl0v0/normarchy/7c64ba8/preview.png)
 
 Unlimited Norm Macdonald videos, one click away. Normarchy puts a compact
 wordmark in the Omarchy bar and plays a random clip in a native anchored panel
