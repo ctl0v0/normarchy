@@ -1,0 +1,27 @@
+name: Catalog CI
+
+on:
+  push:
+    paths:
+      - "catalog/**"
+      - "scripts/**"
+      - ".github/workflows/catalog-ci.yml"
+  pull_request:
+    paths:
+      - "catalog/**"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python3 scripts/catalog_pipeline.py validate
+      - run: python3 -m unittest discover -s scripts/tests -p 'test_*.py'

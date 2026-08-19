@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "channels": [
+    {"id":"UCVUx0VcNxnHx7ZjuZK5Sthw","name":"Letterman","tier":"official"},
+    {"id":"UCo3nWXH_6vVJ5-xbF3bKb3Q","name":"Conan O'Brien","tier":"official"},
+    {"id":"UCi7GJNg51C3jgmYTUwqoUXA","name":"Team Coco","tier":"official"},
+    {"id":"UCqFzWxSCi39LnW1JKFR3efg","name":"Saturday Night Live","tier":"official"},
+    {"id":"UCUsN5ZwHx2kILm84-jPDeXw","name":"Comedy Central","tier":"official"},
+    {"id":"UCWOA1ZGywLbqmigxE4Qlvuw","name":"Netflix","tier":"official"},
+    {"id":"UCObk_g1hQBy0RKKriVX_zOQ","name":"Netflix Is A Joke","tier":"official"},
+    {"id":"UCxzcBfvmeLmUNjlyM7FMgFg","name":"Larry King","tier":"official"},
+    {"id":"UCENdrrK5sWM-RV5nTLwBNXw","name":"The Howard Stern Show","tier":"official"},
+    {"id":"UCUcAMH2MeZHQsVKJb8iVNUA","name":"Tom Green","tier":"official"},
+    {"id":"UCqq3PZwp8Ob8_jN0esCunIw","name":"Just For Laughs","tier":"official"},
+    {"id":"UCORy0Yqzd8bVj2Gb4xyq6HA","name":"Dan Patrick Show","tier":"official"},
+    {"id":"UCEBzHKX-rcyfAzAwftOWMMA","name":"800 Pound Gorilla Audio","tier":"official"},
+    {"id":"UCl5otcmBZiZsarqAsMjsz1g","name":"Norm MacDonald - Topic","tier":"official"},
+    {"id":"UCVWmcFDWz7evOe0Zbly3l8Q","name":"Don Giller","tier":"archive"},
+    {"id":"UCjqfLpA0zMoAsqQX4HpUijg","name":"Happy the Dog","tier":"archive"},
+    {"id":"UCtxPHZF0ql16ZgnL8xhggOg","name":"bubbyberry","tier":"archive"},
+    {"id":"UCBb7ngwIZY9NZ00kGYbMk_A","name":"motor_city_cobra","tier":"archive"},
+    {"id":"UCtF-sDFoRR1lbDf-2RmMNIg","name":"Late Night Archives","tier":"archive"},
+    {"id":"UCyGzp9qxI4tJqXT62h54CTg","name":"Craig Ferguson Archive","tier":"archive"},
+    {"id":"UCGWOcOeXe7UDXSU9gPzvwTQ","name":"Norm Macdonald Live Remastered","tier":"archive"},
+    {"id":"UCFpCZN7fWmFvSDEwqxN2gGQ","name":"Norm Macdonald Video Archive","tier":"archive"},
+    {"id":"UC6J4abMNm_tQ3xMk7Bk6lcA","name":"Norm's Stand Up Vault","tier":"archive"}
+  ]
+}

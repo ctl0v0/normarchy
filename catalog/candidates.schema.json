@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/normarchy/candidates.schema.json",
+  "title": "Normarchy candidate ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "candidates"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": 1},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "candidates": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/candidate"}
+    }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "url", "title", "channel", "channel_id", "duration_seconds",
+        "category", "source_tier", "score", "queries", "discovered_at",
+        "status", "review_reason", "reviewed_by", "reviewed_at",
+        "promoted_in_version"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{11}$"},
+        "url": {"type": "string", "format": "uri"},
+        "title": {"type": "string", "minLength": 1, "maxLength": 300},
+        "channel": {"type": "string", "maxLength": 200},
+        "channel_id": {"type": "string", "maxLength": 100},
+        "duration_seconds": {"type": ["integer", "null"], "minimum": 1},
+        "category": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "source_tier": {"enum": ["official", "archive", "fan"]},
+        "score": {"type": "integer", "minimum": 0, "maximum": 100},
+        "queries": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "discovered_at": {"type": "string", "format": "date-time"},
+        "status": {"enum": ["pending", "accepted", "rejected", "promoted"]},
+        "review_reason": {"type": "string"},
+        "reviewed_by": {"type": "string"},
+        "reviewed_at": {"type": "string"},
+        "promoted_in_version": {"type": ["integer", "null"], "minimum": 1}
+      }
+    }
+  }
+}

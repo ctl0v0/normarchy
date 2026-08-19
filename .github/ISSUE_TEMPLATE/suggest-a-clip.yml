@@ -1,0 +1,49 @@
+name: Suggest a Norm clip
+description: Propose an existing YouTube video for the Normarchy catalog
+title: "[Clip]: "
+labels: ["catalog-candidate"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: YouTube URL
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A concise human-readable title for the appearance or bit.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Content shape
+      options: [Short moment, Standalone clip, Full appearance or source]
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Show, venue, or context
+      placeholder: Conan, stand-up, radio interview, The Norm Show...
+    validations:
+      required: true
+  - type: textarea
+    id: centrality
+    attributes:
+      label: Why it belongs
+      description: Confirm that Norm is central and note whether this is distinct from existing catalog material.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: This is an existing hosted link; I am not submitting downloaded media.
+          required: true
+        - label: This is not a reaction video, AI recreation, or posthumous discussion without Norm.
+          required: true

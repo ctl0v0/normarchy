@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ctl0v0.normarchy",
+  "name": "Normarchy",
+  "version": "1.0.0",
+  "author": "ctl0v0",
+  "license": "MIT",
+  "description": "Unlimited Norm Macdonald videos, one click away in the Omarchy bar.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Normarchy",
+    "description": "Play a random Norm Macdonald clip without opening YouTube.",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "lengthMode": "Quick (< 3 min)"
+    },
+    "schema": [
+      {
+        "key": "lengthMode",
+        "type": "enum",
+        "label": "Clip length",
+        "description": "Choose how long a Norm break should be.",
+        "options": [
+          "Quick (< 3 min)",
+          "Classic (3-15 min)",
+          "Long (15+ min)",
+          "Anything"
+        ],
+        "defaultValue": "Quick (< 3 min)"
+      }
+    ]
+  }
+}
